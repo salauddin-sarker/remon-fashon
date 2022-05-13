@@ -2,62 +2,19 @@
     "use Strict";
 
     $('.hero-slider').owlCarousel({
-        animateIn: 'animate__pulse',
-        animateOut: 'animate__zoomOut',
+        animateIn: 'lightSpeedIn',
+        animateOut: 'lightSpeedOut',
         autoplay: true,
         autoplayTimeout: 7000,
         dots: false,
         loop: true,
         mouseDrag: false,
-        smartSpeed:1000,
         responsive: {
             0: {
                 items: 1
             }
         }
     });
-    $('.product-carousel').owlCarousel({
-        autoplay: true,
-        autoplayTimeout: 5000,
-        smartSpeed:1000,
-        dots: false,
-        loop: true,
-        items: 1,
-        mouseDrag: false,
-    });
-
-    $('.product-holder').owlCarousel({
-        autoplay: true,
-        autoplayTimeout: 5000,
-        smartSpeed:1000,
-        dots: true,
-        loop: true,
-        items: 3,
-        mouseDrag: true,
-    });
-    $('.testimonial-carousel').owlCarousel({
-        autoplay: true,
-        autoplayTimeout: 5000,
-        smartSpeed:1000,
-        dots: true,
-        loop: true,
-        items: 3,
-        mouseDrag: true,
-        margin:30,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            992: {
-                items: 3
-            }
-            
-        }
-    });
-
     $('.blog-carousel').owlCarousel({
         autoplay: true,
         autoplayTimeout: 6000,
@@ -129,7 +86,3 @@
     //     }
     // });
 })(jQuery);
-var preloader = document.getElementById('preloader');
-    function myFunction(){
-preloader.style.display = 'none';
-}
